@@ -75,7 +75,7 @@ function CreateCard() {
               label="Title"
               {...register("title")}
               color={errors["title"] ? "error" : "success"}
-              className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+              className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
             />
             <span className="text-sm text-red-500">{errors["title"]?.message}</span>
 
@@ -85,7 +85,7 @@ function CreateCard() {
               label="Subtitle"
               {...register("subtitle")}
               color={errors["subtitle"] ? "error" : "success"}
-              className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+              className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
             />
             <span className="text-sm text-red-500">{errors["subtitle"]?.message}</span>
 
@@ -95,7 +95,7 @@ function CreateCard() {
               label="Description"
               {...register("description")}
               color={errors["description"] ? "error" : "success"}
-              className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+              className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
             />
             <span className="text-sm text-red-500">{errors["description"]?.message}</span>
 
@@ -105,7 +105,7 @@ function CreateCard() {
               label="Phone"
               {...register("phone")}
               color={errors["phone"] ? "error" : "success"}
-              className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+              className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
             />
             <span className="text-sm text-red-500">{errors["phone"]?.message}</span>
 
@@ -115,7 +115,7 @@ function CreateCard() {
               label="Email"
               {...register("email")}
               color={errors["email"] ? "error" : "success"}
-              className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+              className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
             />
             <span className="text-sm text-red-500">{errors["email"]?.message}</span>
 
@@ -125,7 +125,7 @@ function CreateCard() {
               label="Web"
               {...register("web")}
               color={errors["web"] ? "error" : "success"}
-              className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+              className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
             />
             <span className="text-sm text-red-500">{errors["web"]?.message}</span>
           </div>
@@ -138,7 +138,7 @@ function CreateCard() {
               label="Country"
               {...register("address.country")}
               color={errors["address"]?.country ? "error" : "success"}
-              className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+              className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
             />
             <span className="text-sm text-red-500">{errors["address"]?.country?.message}</span>
 
@@ -148,7 +148,7 @@ function CreateCard() {
               label="State"
               {...register("address.state")}
               color={errors["address"]?.state ? "error" : "success"}
-              className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+              className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
             />
             <span className="text-sm text-red-500">{errors["address"]?.state?.message}</span>
 
@@ -158,7 +158,7 @@ function CreateCard() {
               label="City"
               {...register("address.city")}
               color={errors["address"]?.city ? "error" : "success"}
-              className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+              className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
             />
             <span className="text-sm text-red-500">{errors["address"]?.city?.message}</span>
 
@@ -168,7 +168,7 @@ function CreateCard() {
               label="Street"
               {...register("address.street")}
               color={errors["address"]?.street ? "error" : "success"}
-              className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+              className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
             />
             <span className="text-sm text-red-500">{errors["address"]?.street?.message}</span>
 
@@ -178,7 +178,7 @@ function CreateCard() {
               label="House Number"
               {...register("address.houseNumber")}
               color={errors["address"]?.houseNumber ? "error" : "success"}
-              className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+              className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
             />
             <span className="text-sm text-red-500">{errors["address"]?.houseNumber?.message}</span>
 
@@ -188,7 +188,7 @@ function CreateCard() {
               label="ZIP Code"
               {...register("address.zip")}
               color={errors["address"]?.zip ? "error" : "success"}
-              className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+              className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
             />
             <span className="text-sm text-red-500">{errors["address"]?.zip?.message}</span>
 
@@ -198,7 +198,7 @@ function CreateCard() {
               label="Image URL"
               {...register("image.url")}
               color={errors["image"]?.url ? "error" : "success"}
-              className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+              className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
             />
             <span className="text-sm text-red-500">{errors["image"]?.url?.message}</span>
 
@@ -208,7 +208,7 @@ function CreateCard() {
               label="Image Alt Text"
               {...register("image.alt")}
               color={errors["image"]?.alt ? "error" : "success"}
-              className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+              className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
             />
             <span className="text-sm text-red-500">{errors["image"]?.alt?.message}</span>
           </div>
