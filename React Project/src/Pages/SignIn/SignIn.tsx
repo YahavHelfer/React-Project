@@ -1,4 +1,3 @@
-/* eslint-disable tailwindcss/classnames-order */
 import { joiResolver } from "@hookform/resolvers/joi";
 import { Button, FloatingLabel } from "flowbite-react";
 import { useForm } from "react-hook-form";
@@ -65,11 +64,11 @@ function SignIn() {
           label="Email"
           {...register("email")}
           color={errors["email"] ? "error" : "success"}
-          className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+          className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
         />
         {errors["email"] ? (
           <span className="text-sm text-red-500">{errors["email"]?.message}</span>
-        ) : <></>}
+        ) : null}
 
         <FloatingLabel
           type="password"
@@ -77,7 +76,7 @@ function SignIn() {
           label="Password"
           {...register("password")}
           color={errors["password"] ? "error" : "success"}
-          className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+          className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
         />
         {errors["password"] && (
           <span className="text-sm text-red-500">{errors["password"]?.message}</span>
