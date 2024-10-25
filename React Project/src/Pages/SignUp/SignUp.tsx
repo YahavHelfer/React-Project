@@ -58,7 +58,7 @@ function SignUp() {
     console.log("Is form valid: ", isValid);
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-200 dark:bg-gray-900">
+        <div className="flex items-center justify-center h-full bg-gray-200 dark:bg-gray-900">
             <form
                 className="flex flex-col w-full max-w-4xl gap-4 p-6 m-auto bg-white rounded-lg shadow-md dark:bg-gray-800"
                 onSubmit={handleSubmit(submit)}
