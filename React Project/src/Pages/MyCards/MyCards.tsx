@@ -91,7 +91,7 @@ const MyCards = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-start gap-4 p-4">
+    <div className="flex flex-col items-center justify-start gap-4 p-4 ">
       <h1 className="text-3xl font-bold text-center">My Cards</h1>
       <p className="text-lg text-center">These cards were created by you</p>
 
@@ -138,9 +138,11 @@ const MyCards = () => {
         </div>
       )}
 
-      <div className="fixed flex p-3 rounded-full cursor-pointer right-10 top-20 bg-cyan-300">
+      <div className="fixed flex p-3 rounded-full cursor-pointer right-4 bottom-20 bg-cyan-300 md:right-10 md:bottom-15">
         <PiPlus size={20} onClick={navToCreate} />
       </div>
+
+
     </div>
   );
 };
