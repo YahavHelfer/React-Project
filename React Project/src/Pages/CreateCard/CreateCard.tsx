@@ -59,7 +59,7 @@ function CreateCard() {
   console.log("Is form valid: ", isValid);
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900">
+    <div className="flex items-center justify-center h-full bg-gray-100 dark:bg-gray-900">
       <form
         className="flex flex-col w-2/5 gap-4 p-6 m-auto mt-20 bg-white rounded-lg shadow-lg dark:bg-gray-800"
         onSubmit={handleSubmit(submit)}
