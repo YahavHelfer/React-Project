@@ -79,11 +79,12 @@ const EditCard = () => {
     }
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900">
+        <div className="flex items-center justify-center h-full bg-gray-100 dark:bg-gray-900">
             <form
-                className="flex grid flex-col w-3/5 grid-cols-1 gap-4 p-4 m-auto mt-20 bg-white rounded-lg shadow-lg dark:bg-gray-800 md:grid-cols-2"
+                className="flex flex-col w-3/5 gap-4 p-4 m-auto mt-20 bg-white rounded-lg shadow-lg dark:bg-gray-800 sm:grid sm:grid-cols-1 md:grid-cols-2"
                 onSubmit={(e) => { e.preventDefault(); saveCardData(); }}
             >
+
                 <h1 className="col-span-2 text-2xl font-bold text-gray-800 dark:text-gray-200">Edit Your Card</h1>
 
                 <FloatingLabel
