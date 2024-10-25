@@ -1,0 +1,53 @@
+.card-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 500px;
+  text-align: center;
+  min-height: 400px; /* מוודא שכל הכרטיסיות יהיו לפחות בגובה זה */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* מוודא שכל האלמנטים מפוזרים בתוך הכרטיס */
+}
+
+.card-image {
+  width: 100%;
+  height: 200px; /* גובה קבוע לתמונה */
+  object-fit: cover; /* שמירה על יחס התמונה */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.card-subtitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.card-description,
+.card-phone,
+.card-email,
+.card-web {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.card-address {
+  font-size: 14px;
+  color: #777;
+}

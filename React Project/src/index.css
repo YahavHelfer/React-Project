@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+* {
+  caret-color: transparent; /* Hide caret everywhere */
+}
+
+input, textarea {
+  caret-color: auto; /* Show caret in input and textarea fields */
+}
