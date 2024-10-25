@@ -1,4 +1,3 @@
-/* eslint-disable tailwindcss/classnames-order */
 import { joiResolver } from "@hookform/resolvers/joi";
 import { Button, FloatingLabel } from "flowbite-react";
 import { useForm } from "react-hook-form";
@@ -55,7 +54,6 @@ function SignUp() {
             console.error("Error during sign up: ", error);
             toast.error("Sign Up Failed");
         }
-
     };
     console.log("Is form valid: ", isValid);
 
@@ -75,7 +73,7 @@ function SignUp() {
                             label="First Name"
                             {...register("name.first")}
                             color={errors["name"]?.first ? "error" : "success"}
-                            className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                            className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                         />
                         <span className="text-sm text-red-500">{errors["name"]?.first?.message}</span>
 
@@ -85,7 +83,7 @@ function SignUp() {
                             label="Middle Name"
                             {...register("name.middle")}
                             color={errors["name"]?.middle ? "error" : "success"}
-                            className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                            className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                         />
                         <span className="text-sm text-red-500">{errors["name"]?.middle?.message}</span>
 
@@ -95,7 +93,7 @@ function SignUp() {
                             label="Last Name"
                             {...register("name.last")}
                             color={errors["name"]?.last ? "error" : "success"}
-                            className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                            className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                         />
                         <span className="text-sm text-red-500">{errors["name"]?.last?.message}</span>
 
@@ -105,7 +103,7 @@ function SignUp() {
                             label="Phone"
                             {...register("phone")}
                             color={errors["phone"] ? "error" : "success"}
-                            className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                            className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                         />
                         <span className="text-sm text-red-500">{errors["phone"]?.message}</span>
 
@@ -115,7 +113,7 @@ function SignUp() {
                             label="Email"
                             {...register("email")}
                             color={errors["email"] ? "error" : "success"}
-                            className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                            className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                         />
                         <span className="text-sm text-red-500">{errors["email"]?.message}</span>
 
@@ -125,7 +123,7 @@ function SignUp() {
                             label="Password"
                             {...register("password")}
                             color={errors["password"] ? "error" : "success"}
-                            className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                            className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                         />
                         <span className="text-sm text-red-500">{errors["password"]?.message}</span>
                     </div>
@@ -138,7 +136,7 @@ function SignUp() {
                             label="Country"
                             {...register("address.country")}
                             color={errors["address"]?.country ? "error" : "success"}
-                            className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                            className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                         />
                         <span className="text-sm text-red-500">{errors["address"]?.country?.message}</span>
 
@@ -148,7 +146,7 @@ function SignUp() {
                             label="State"
                             {...register("address.state")}
                             color={errors["address"]?.state ? "error" : "success"}
-                            className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                            className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                         />
                         <span className="text-sm text-red-500">{errors["address"]?.state?.message}</span>
 
@@ -158,7 +156,7 @@ function SignUp() {
                             label="City"
                             {...register("address.city")}
                             color={errors["address"]?.city ? "error" : "success"}
-                            className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                            className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                         />
                         <span className="text-sm text-red-500">{errors["address"]?.city?.message}</span>
 
@@ -168,7 +166,7 @@ function SignUp() {
                             label="Street"
                             {...register("address.street")}
                             color={errors["address"]?.street ? "error" : "success"}
-                            className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                            className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                         />
                         <span className="text-sm text-red-500">{errors["address"]?.street?.message}</span>
 
@@ -178,7 +176,7 @@ function SignUp() {
                             label="House Number"
                             {...register("address.houseNumber")}
                             color={errors["address"]?.houseNumber ? "error" : "success"}
-                            className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                            className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                         />
                         <span className="text-sm text-red-500">{errors["address"]?.houseNumber?.message}</span>
 
@@ -188,7 +186,7 @@ function SignUp() {
                             label="ZIP Code"
                             {...register("address.zip")}
                             color={errors["address"]?.zip ? "error" : "success"}
-                            className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                            className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                         />
                         <span className="text-sm text-red-500">{errors["address"]?.zip?.message}</span>
 
@@ -198,7 +196,7 @@ function SignUp() {
                             label="Image URL"
                             {...register("image.url")}
                             color={errors["image"]?.url ? "error" : "success"}
-                            className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                            className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                         />
                         <span className="text-sm text-red-500">{errors["image"]?.url?.message}</span>
 
@@ -208,7 +206,7 @@ function SignUp() {
                             label="Image Alt Text"
                             {...register("image.alt")}
                             color={errors["image"]?.alt ? "error" : "success"}
-                            className="border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                            className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                         />
                         <span className="text-sm text-red-500">{errors["image"]?.alt?.message}</span>
 
