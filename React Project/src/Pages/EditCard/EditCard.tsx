@@ -93,7 +93,7 @@ const EditCard = () => {
                     onChange={handleInputChange}
                     name="title"
                     variant={"outlined"}
-                    className="m-2 border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                    className="m-2 border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                 />
                 <FloatingLabel
                     type="text"
@@ -102,7 +102,7 @@ const EditCard = () => {
                     onChange={handleInputChange}
                     name="subtitle"
                     variant={"outlined"}
-                    className="m-2 border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                    className="m-2 border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                 />
                 <FloatingLabel
                     type="text"
@@ -111,7 +111,7 @@ const EditCard = () => {
                     onChange={handleInputChange}
                     name="description"
                     variant={"outlined"}
-                    className="m-2 border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                    className="m-2 border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                 />
                 <FloatingLabel
                     type="text"
@@ -120,7 +120,7 @@ const EditCard = () => {
                     onChange={handleInputChange}
                     name="phone"
                     variant={"outlined"}
-                    className="m-2 border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                    className="m-2 border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                 />
                 <FloatingLabel
                     type="email"
@@ -129,7 +129,7 @@ const EditCard = () => {
                     onChange={handleInputChange}
                     name="email"
                     variant={"outlined"}
-                    className="m-2 border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                    className="m-2 border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                 />
                 <FloatingLabel
                     type="text"
@@ -138,7 +138,7 @@ const EditCard = () => {
                     onChange={handleInputChange}
                     name="web"
                     variant={"outlined"}
-                    className="m-2 border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                    className="m-2 border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                 />
                 <FloatingLabel
                     type="text"
@@ -147,7 +147,7 @@ const EditCard = () => {
                     onChange={handleInputChange}
                     name="image.url"
                     variant={"outlined"}
-                    className="m-2 border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                    className="m-2 border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                 />
                 <FloatingLabel
                     type="text"
@@ -156,7 +156,7 @@ const EditCard = () => {
                     onChange={handleInputChange}
                     name="image.alt"
                     variant={"outlined"}
-                    className="m-2 border bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600"
+                    className="m-2 border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
                 />
 
                 <div className="flex justify-between col-span-2">
