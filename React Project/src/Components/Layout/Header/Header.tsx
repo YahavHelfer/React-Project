@@ -22,11 +22,7 @@ const Header = () => {
   };
 
   return (
-    <Navbar
-      fluid
-      
-      className="sticky top-0 z-50 shadow-md bg-slate-800" 
-    >
+    <Navbar fluid className="sticky top-0 z-50 shadow-md bg-slate-800">
       <Navbar.Brand as={Link} href="https://flowbite-react.com">
         <span className="self-center text-xl font-semibold text-white whitespace-nowrap">
           Helfer B Card
@@ -74,9 +70,8 @@ const Header = () => {
         )}
       </Navbar.Collapse>
 
-
       <div className="flex items-center gap-4">
-        <TextInput rightIcon={CiSearch} onChange={search}  />
+        <TextInput rightIcon={CiSearch} onChange={search} />
 
         {user && (
           <div className="flex items-center gap-2">
@@ -86,7 +81,6 @@ const Header = () => {
         )}
       </div>
       <DarkThemeToggle className="gap-3 max-md:flex max-md:flex-col max-md:items-center " />
-
     </Navbar>
   );
 };
