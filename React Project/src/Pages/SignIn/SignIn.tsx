@@ -30,22 +30,31 @@ function SignIn() {
 
   const submit = async (form: typeof initialFormData) => {
     try {
-      const token = await axios.post(
+      const response = await axios.post(
         "https://monkfish-app-z9uza.ondigitalocean.app/bcard2/users/login",
         form
       );
 
-      localStorage.setItem("token", token.data);
-      const id = decode(token.data)._id;
-      axios.defaults.headers.common["x-auth-token"] = token.data;
-      const user = await axios.get(
+      const token = response.data;
+      localStorage.setItem("token", token);
+
+      const id = decode(token)._id;
+      axios.defaults.headers.common["x-auth-token"] = token;
+
+      const userResponse = await axios.get(
         "https://monkfish-app-z9uza.ondigitalocean.app/bcard2/users/" + id
       );
-      dispatch(userActions.login(user.data));
+
+      const user = userResponse.data;
+      dispatch(userActions.login(user));
+
+      // שמירת המשתמש ב-localStorage כדי לשמור התחברות
+      localStorage.setItem("user", JSON.stringify(user));
+
       toast.success("Sign In Successful");
       nav("/");
     } catch (error) {
-      console.log(error);
+      console.error(error);
       toast.error("Sign In Failed");
     }
   };
@@ -66,9 +75,9 @@ function SignIn() {
           color={errors["email"] ? "error" : "success"}
           className="border-0 border-b-0 bg-gray-50 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
         />
-        {errors["email"] ? (
+        {errors["email"] && (
           <span className="text-sm text-red-500">{errors["email"]?.message}</span>
-        ) : null}
+        )}
 
         <FloatingLabel
           type="password"
